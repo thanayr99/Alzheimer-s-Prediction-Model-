@@ -1,0 +1,50 @@
+/* Gradient background for the form container */
+.form-container {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Title styling */
+.form-title {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient input fields */
+.gradient-input {
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.gradient-input:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient button */
+.gradient-btn {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  transform: scale(1.05);
+}
+
+.gradient-btn:active {
+  transform: scale(0.95);
+}
