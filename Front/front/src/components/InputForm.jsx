@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./InputForm.css"; // Import custom CSS for gradient styling
+import "./InputForm.css"; // Reuse gradient styles for consistency
 
 function InputForm({ onSubmit }) {
   const [formData, setFormData] = useState({
@@ -23,8 +23,8 @@ function InputForm({ onSubmit }) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(formData);
+    e.preventDefault(); // Prevent default form submission behavior
+    onSubmit(formData); // Call the parent component's onSubmit handler
   };
 
   return (

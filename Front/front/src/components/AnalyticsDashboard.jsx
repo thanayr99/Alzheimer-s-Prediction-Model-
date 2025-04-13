@@ -1,8 +1,12 @@
 import React from "react";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Pie } from "react-chartjs-2";
 import { FaChartPie, FaCheckCircle } from "react-icons/fa";
 import { MdInsights } from "react-icons/md";
-import { Pie } from "react-chartjs-2";
-import "./InputForm.css"; // Reuse the gradient styles from InputForm.css
+import "./InputForm.css"; // Reuse gradient styles for consistency
+
+// Register Chart.js elements
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 function AnalyticsDashboard({ analyticsData }) {
   console.log("Analytics Data:", analyticsData); // Debugging log
